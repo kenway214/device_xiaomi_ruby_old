@@ -13,4 +13,8 @@ rm -rf kernel/xiaomi/mt6877 && git clone --depth=1 https://github.com/PQEnablers
 echo 'Cloning hardware xiaomi'
 rm -rf hardware/mediatek && git clone https://github.com/PQEnablers-Devices/android_hardware_mediatek -b lineage-20-foss hardware/mediatek
 
+# mediatek sepolicy_vndr
+echo 'Cloning mediatek sepolicy vndr'
+rm -rf device/mediatek/sepolicy_vndr && git clone https://github.com/PQEnablers-Devices/android_device_mediatek_sepolicy_vndr.git -b lineage-20 device/mediatek/sepolicy_vndr
+
 echo 'delete vendorsetup.sh from device tree once this is done'
